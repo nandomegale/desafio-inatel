@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PeopleDetailComponent } from './people-detail/people-detail.component';
 import { PeopleListComponent } from './people-list/people-list.component';
-import { StarshipListComponent } from './starship-list/starship-list.component';
+import { StarshipsDetailComponent } from './starships-detail/starships-detail.component';
+import { StarshipsListComponent } from './starships-list/starships-list.component';
 
 
 const routes: Routes = [
@@ -11,12 +13,20 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'people-list', 
+    path: 'people-list',
     component: PeopleListComponent
   },
   {
-    path: 'starship-list', 
-    component: StarshipListComponent
+    path: 'starships-list',
+    component: StarshipsListComponent
+  },
+  {
+    path: 'people-detail/:id',
+    component: PeopleDetailComponent
+  },
+  {
+    path: 'starships-detail/:id',
+    component: StarshipsDetailComponent
   }
 ];
 

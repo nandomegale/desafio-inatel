@@ -1,0 +1,14 @@
+<h2>Starships Detail</h2>
+<div *ngIf="starships">
+    <h3>Name: </h3>
+    <span>{{starships.name}}</span>
+    <h3>Pilots: </h3>
+    <ul>
+        <li *ngFor="let s of starships">
+            <span>
+                {{s.pilots}}
+            </span>
+        </li>
+    </ul>
+
+</div>

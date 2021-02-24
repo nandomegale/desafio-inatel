@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --yellow: #ffc601;
+    --grey: #d8dae2;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, sans-serif;
+    color: var(--grey);
+  }
+
+  body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }

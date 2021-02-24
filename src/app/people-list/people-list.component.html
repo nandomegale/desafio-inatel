@@ -1,1 +1,10 @@
-<p>people-list works!</p>
+<h2>People List</h2>
+<ul>
+    <li *ngFor="let c of people">
+        <a routerLink="/people-detail/{{c.id}}/">
+            <span>
+                {{c.name}}
+            </span>
+        </a>
+    </li>
+</ul>
